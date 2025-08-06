@@ -1,12 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="/assets/favicon-DfEJk8j7.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patrick Gadula – Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-BE1TQNeO.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CZo-qWYg.css">
+    <title>Patrick Gadula - Portfolio</title>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-C_A_rKQX.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D3qXADHW.css">
   </head>
   <body>
     <div id="root"></div>
